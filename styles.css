@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E7DFD8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #E7DFD8;
+    color: #fff;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centers the navbar items */
+    height: 50px; /* Adjust the height as needed */
+    font-family: "Sofia", sans-serif;
+    font-size: larger;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-left: -250px;
+}
+
+/* List item styling */
+nav ul li {
+    margin-left: 270px; /* Space between items */
+}
+
+/* Link styling */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adjust padding for better click area */
+    display: block; /* Makes the link fill the list item */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #e6b66e; /* Change background color on hover */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.myDiv {
+    display: flex; /* Makes the div a flex container */
+    justify-content: space-between; /* Ensures space between text and image */
+    align-items: center; /* Centers content vertically */
+    width: 90%; /* Full width of the parent */
+    height: 500px; /* Set desired height */
+    border: 2px solid black; /* Optional: for visual boundary */
+    padding: 5px;
+    margin: 80px 0px 130px 70px;
+}
+
+.intro {
+    flex: 1; /* Takes up available space */
+    padding-right: 30px;
+    margin-left: 50px;
+    margin-bottom: 170px;
+}
+  
+.text-content {
+    flex: 1; /* Takes up available space */
+    padding-right: 30px;
+    margin-left: 50px;
+}
+  
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+ 
+}
+  
+.image-content img {
+    width: 70%; /* Image fills its container */
+    height: 90%; /* Maintains aspect ratio */
+    object-fit: cover; /* Covers the space while keeping the aspect ratio */
+    padding: 5%;
+}
+
+#home {
+    color: black;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 150px;
+}
+
+.intro h4 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -20px;
+}
+
+.intro p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h1 {
+    text-align: center;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: -30px;
+}
+
+
+#about p {
+    margin-left: 50px;
+    line-height: 1.6;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#skills h2 {
+    text-align: center; /* Centers the text inside the h2 */
+    width: 100%; /* Ensures it takes up the full width of its container */
+    margin-top: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+
+.skill-card {
+    background-color: #f7f3ec;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); /* Moves the card slightly upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow to create a "lift" effect */
+    background-color: #e7e6dd; /* Optional: Changes the background color on hover */
+}
+
+#projects h2 {
+    text-align: center; /* Centers the text inside the h2 */
+    width: 100%; /* Ensures it takes up the full width of its container */
+    margin-top: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #f7f3ec;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Moves the card slightly upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow to create a "lift" effect */
+    background-color:#e7e6dd; /* Optional: Changes the background color on hover */
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 80px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust spacing between icons */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.social-icon {
+    font-size: 24px; /* Size of the icons */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.social-icon.linkedin {
+    color: #0A66C2; /* LinkedIn brand color */
+}
+
+.social-icon.github {
+    color: #333; /* GitHub brand color (black/gray) */
+}
+
+.social-icon.instagram {
+    color: #E1306C; /* Instagram brand color */
+}
+
+.social-icon.facebook {
+    color: #1877F2; /* Facebook brand color */
+}
+
+.social-icon:hover {
+    transform: translateY(-5px); /* Adds a subtle hover effect */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
